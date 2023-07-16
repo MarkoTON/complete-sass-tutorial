@@ -1,3 +1,7 @@
+// Ovo dodje poput palete sa bojama, samo ovde smo dodali sve karakteristike koje ce .btn da ima. 
+// Onda preko @each mi setujemo naziv i boju, dok ostali podaci se nasladjuju/dodaju
+// $bg-color: #e2e2e2 - defaultna boja kada koristimo .btn, i onda dodam .btn .btn-primary, i preko .btn-prumary pregazicemo background-color.
+
 @mixin btn($bg-color: #e2e2e2) {
   text-decoration: none;
   cursor: pointer;
