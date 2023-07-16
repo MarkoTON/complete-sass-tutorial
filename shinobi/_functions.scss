@@ -1,5 +1,6 @@
 @function light-comp($color) {
   $complement: complement($color);
+  // lighten dodje kao izbeljivanje
   $light-complement: lighten($complement, 30%);
   @return $light-complement;
 }
