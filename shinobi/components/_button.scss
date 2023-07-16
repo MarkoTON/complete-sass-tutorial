@@ -20,7 +20,7 @@
     }
   }
   .btn-outlined-#{$key} {
-    @include btn(#fff);
+    @include btn(#fff); // Kazemo da mu bacground bude bele boje
     border: $base-border-thickness solid $val;
     &:hover {
       background-color: $val;
