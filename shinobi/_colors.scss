@@ -1,4 +1,7 @@
 @each $key, $val in $colors {
+  // .text-primary..
+  // .bg-primary..
+
   .text-#{$key} {
     color: $val;
   }
@@ -6,15 +9,22 @@
     background-color: $val;
   }
 
+  // .text-primary-light-1..
+  // .bg-primary-light-1..
+
   // light variations
   @for $i from 1 through 9 {
     .text-#{$key}-light-#{$i} {
       color: mix(white, $val, $i * 10);
     }
     .bg-#{$key}-light-#{$i} {
+      // dodaje se Bela boja, i onda se uzima 1*10=10%, i tako se dobija nijansa
       background-color: mix(white, $val, $i * 10);
     }
   }
+
+  // .text-primary-dark-1..
+  // .bg-primary-dark-1..
 
   // dark variations
   @for $i from 1 through 9 {
