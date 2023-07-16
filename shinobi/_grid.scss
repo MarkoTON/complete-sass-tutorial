@@ -24,6 +24,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // grid gaps
 @each $key, $val in $grid-gaps {
+  // * Oznacava bilo koji element koji se nalazi ispod gap-1.. .gap-2 stavljamo tipa na .row-u
   .gap-#{$key} > * {
     padding: $val;
   }
