@@ -17,8 +17,10 @@
 }
 
 @each $key, $val in $colors {
+  // .btn-primary - za hover nema razgranje kao za text i background, nego je 0.5 i vazi za svu dugmad.
   .btn-#{$key} {
     @include btn($val);
+    // .btn-primary:hover
     &:hover {
       background-color: lighten($val, 5);
     }
