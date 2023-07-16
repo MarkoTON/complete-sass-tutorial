@@ -133,7 +133,7 @@ $utilities: (
       "none": 0,
       "xs": math.div($base-border-radius, 4),
       "sm": math.div($base-border-radius, 2),
-      "md": $base-border-radius,
+      "default": $base-border-radius,
       "lg": $base-border-radius * 2,
       "full": 50%,
     )
@@ -164,7 +164,6 @@ $utilities: (
 @each $property, $map in $utilities {
   $prefix: map-get($map, "prefix");
   $values: map-get($map, "values");
-
   @each $k, $v in $values {
     @if($k == "default") {
       .#{$prefix} {
@@ -176,4 +175,9 @@ $utilities: (
       }
     }
   }
+  // @debug $property;
+  // @debug $map;
+  // @debug $utilities;
+  @debug $prefix;
+  @debug $values;
 }
