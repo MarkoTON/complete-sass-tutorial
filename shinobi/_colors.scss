@@ -2,14 +2,17 @@
   .text-#{$key} {
     color: $val;
   }
+  // Mora da imamo i orginalnu vrednost na hover-u, to sluzi kada recimo imamo teks koji je crne boje, a mi zelimo da preko .text-hover.primary prebacimo teks u orginalnu boju, a ne u gradijent.
   .text-hover-#{$key} {
     &:hover {
       color: $val;
     }
   }
+
   .bg-#{$key} {
     background-color: $val;
   }
+
   @if ($val != black and $val != white) {
     // light variations
     @for $i from 1 through 9 {
