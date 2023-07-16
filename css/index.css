@@ -3418,10 +3418,6 @@ img {
   opacity: 1;
 }
 
-.br {
-  border-radius: 20px;
-}
-
 .br-none {
   border-radius: 0;
 }
@@ -3432,6 +3428,10 @@ img {
 
 .br-sm {
   border-radius: 10px;
+}
+
+.br-md {
+  border-radius: 20px;
 }
 
 .br-lg {

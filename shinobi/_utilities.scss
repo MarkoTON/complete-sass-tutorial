@@ -130,10 +130,10 @@ $utilities: (
   "border-radius": (
     "prefix": "br",
     "values": (
-      "default": $base-border-radius,
       "none": 0,
       "xs": math.div($base-border-radius, 4),
       "sm": math.div($base-border-radius, 2),
+      "md": $base-border-radius,
       "lg": $base-border-radius * 2,
       "full": 50%,
     )
