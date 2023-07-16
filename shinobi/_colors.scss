@@ -6,6 +6,8 @@
     background-color: $val;
   }
 
+  // Sluzi da se ne prave varijante za black i white, posto ce na kraju ispasti idalje bela i crna. 
+  // Preko ovog uslova prolazi kroz lupu samo ona boja koja nije black or white
   @if ($val != black and $val != white) {
     // light variations
     @for $i from 1 through 9 {
